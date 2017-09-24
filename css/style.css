@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+*{
+    background-color: rgba(175, 104, 104, 0.82);
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+#list, #list * {
+    background-color: pink;
+}
+#list {
+    margin: 5%;
+}
+ul {
+    list-style-type: disc !important;
+}
