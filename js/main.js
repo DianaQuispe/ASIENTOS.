@@ -12,17 +12,25 @@ class List {
 
     add() {
         var newList = '<ul><li>';
-        $('#list').append( newList +$('#text').val() + '</li></ul>');
-        $('#list').attr('contentEditable','true');
+        if($('#text').val() != ''){
+            $('#list').append( newList +'<i  class="fa fa-times-circle" aria-hidden="true"></i> </n></n>' + $('#text').val() +  '</li><i id="slow" class="fa fa-times-circle close" aria-hidden="true"></i></ul>');
+            $('#list').attr('contentEditable','true');
+            $('#text').val('');            
+        }else alert('ponga lista');
         
     }
-    edit() {
+    slow() {
+        $('li').fadeOut('slow');
     }
     start() {
         $('#add').click(() => this.add());
+        $('#slow').click(() => this.slow());
+     
+
+        
     }
  }
- $(document).ready(()=> {
-     var list = new List();
-     list.start();
- })
+    $(document).ready(()=> {
+        var list = new List();
+        list.start();
+    })
