@@ -16,10 +16,7 @@ class List {
         
     }
     done() {
-    
-    //    $('li').wrap("<del>");
-    (event.target).style.textDecoration =  ((event.target).style.textDecoration =="line-through") ? 'transparent' : "line-through" ;
-    
+        (event.target).style.textDecoration =  ((event.target).style.textDecoration =="line-through") ? 'transparent' : "line-through" ;
 
     }
     start() {
@@ -31,10 +28,6 @@ class List {
     $(document).ready(()=> {
         var list = new List();
         list.start();
-        $('#add').keypress(function(e) {
-            if(e.which == 13) {
-                alert('You pressed enter!');
-            }
-        });
+
     })
     
