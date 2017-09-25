@@ -1,28 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <title>TODO-LIST</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Venta de Pasjes</title>
 </head>
 
 <body>
-    <section class="container-flex">
-        <h1 align='center' >TO DO LIST</h1><br>
-        <div class="row">
-            <div align='center' class="col-md-6 col-md-offset-3">
-                <input  type="text" id="text" placeholder="text"><button id="add"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-                </button><br><br>
-            </div>
-            <div id="list"></div> 
-        </div>
-    </section>
-    <script src="js/main.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <h1 align="center">Venta de Pasajes</h1>
+    <h2>Asientos</h2>
+    <table border="1">
+        <tr>
+            <td><button>4</button></td>
+            <td><button>8</button></td>
+            <td><button>12</button></td>
+            <td><button>16</button></td>
+            <td><button>20</button></td>
+            <td><button>24</button></td>
+            <td><button>28</button></td>
+            <td><button>32</button></td>
+        </tr>
+        <tr>
+            <td><button>3</button></td>
+            <td><button>7</button></td>
+            <td><button>11</button></td>
+            <td><button>15</button></td>
+            <td><button>19</button></td>
+            <td><button>23</button></td>
+            <td><button>27</button></td>
+            <td><button>31</button></td>
+        </tr>
+        <tr>
+            <td><button>2</button></td>
+            <td><button>6</button></td>
+            <td><button>10</button></td>
+            <td><button>14</button></td>
+            <td><button>18</button></td>
+            <td><button>22</button></td>
+            <td><button>26</button></td>
+            <td><button>30</button></td>
+        </tr>
+        <tr>
+            <td><button>1</button></td>
+            <td><button>5</button></td>
+            <td><button>9</button></td>
+            <td><button>13</button></td>
+            <td><button>17</button></td>
+            <td><button>21</button></td>
+            <td><button>25</button></td>
+            <td><button>29</button></td>
+        </tr>
+    </table>
+    <p>
+        DNI: <input type="text" id="dniBuscar">
+        <input type="button" value="Buscar" id="btnBuscar">
+    </p>
+    <hr>
+    <p>Asiento: <input type="text" id="asiento" disabled></p>
+    <p>Nombre: <input type="text" id="nombre"></p>
+    <p>Apellido: <input type="text" id="apellido"></p>
+    <p>DNI: <input type="text" id="dni"></p>
+    <p>
+        <input type="button" value="Reservar" id="btnReservar">
+        <input type="button" value="Cancelar" id="btnCancelar">
+    </p>
+    <hr>
+    <p><input type="button" value="Listar" id="btnListar"></p>
+    <div id="listar"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
